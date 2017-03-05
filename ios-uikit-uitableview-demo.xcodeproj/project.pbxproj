@@ -13,6 +13,7 @@
 		960F33D31E6BF55900D04E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 960F33D21E6BF55900D04E4B /* Assets.xcassets */; };
 		960F33D61E6BF55900D04E4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 960F33D41E6BF55900D04E4B /* LaunchScreen.storyboard */; };
 		960F33E11E6BF55900D04E4B /* ios_uikit_uitableview_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F33E01E6BF55900D04E4B /* ios_uikit_uitableview_demoTests.swift */; };
+		960F33ED1E6BF69500D04E4B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960F33EB1E6BF69500D04E4B /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		960F33DC1E6BF55900D04E4B /* ios-uikit-uitableview-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-uikit-uitableview-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		960F33E01E6BF55900D04E4B /* ios_uikit_uitableview_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_uikit_uitableview_demoTests.swift; sourceTree = "<group>"; };
 		960F33E21E6BF55900D04E4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		960F33EB1E6BF69500D04E4B /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				960F33CB1E6BF55900D04E4B /* AppDelegate.swift */,
 				960F33CD1E6BF55900D04E4B /* ViewController.swift */,
+				960F33EB1E6BF69500D04E4B /* TableViewCell.swift */,
 				960F33CF1E6BF55900D04E4B /* Main.storyboard */,
 				960F33D21E6BF55900D04E4B /* Assets.xcassets */,
 				960F33D41E6BF55900D04E4B /* LaunchScreen.storyboard */,
@@ -201,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960F33ED1E6BF69500D04E4B /* TableViewCell.swift in Sources */,
 				960F33CE1E6BF55900D04E4B /* ViewController.swift in Sources */,
 				960F33CC1E6BF55900D04E4B /* AppDelegate.swift in Sources */,
 			);
@@ -343,6 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-uikit-uitableview-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-uikit-uitableview-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,6 +361,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PCCZJUYRT6;
 				INFOPLIST_FILE = "ios-uikit-uitableview-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.st-ventures.ios-uikit-uitableview-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
