@@ -12,7 +12,7 @@ UIScrollView
 |-----------|------------|------------|
 | delegate | delegateを設定する | tableView.delegate |
 | dataSource | dataSourceを指定する | tableView.titleView |
-| allowsSelection | セルの選択可否 | tableView.allowsSelection || backBarButtonItem | 戻るボタン | tableView.backBarButtonItem |
+| allowsSelection | セルの選択可否 | tableView.allowsSelection |
 
 ## 主要メソッド
 
