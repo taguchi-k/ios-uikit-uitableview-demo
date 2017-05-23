@@ -29,7 +29,7 @@ final class ViewController: UIViewController {
          */
         tableView.refreshControl = refreshControl
         // 文言設定
-        refreshControl.attributedTitle = NSAttributedString(string: "Refresh")
+        refreshControl.attributedTitle = NSAttributedString(string: "さいとうさん")
         // アクション設定
         refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
     }
@@ -38,16 +38,17 @@ final class ViewController: UIViewController {
     
     // pull to refresh時のアクション
     func refresh(sender: UIRefreshControl) {
-        
-        // クルクル開始
+
+        // クルクル開始（細く：明示的にbeginRefreshing()呼ばなくてもクルクルする）
         refreshControl.beginRefreshing()
         print("beginRefreshing()後のリフレッシュ状態 = \(sender.isRefreshing)")
-        
+
         // データ更新処理などをする（ここでは遅延処理で擬似的に更新している感じを出している）
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + .seconds(3)) {
             print("ここでやりたい処理をする")
             // tableも更新する
             self.tableView.reloadData()
+
             // クルクルを止める
             self.refreshControl.endRefreshing()
             print("beginRefreshing()後のリフレッシュ状態 = \(sender.isRefreshing)")
